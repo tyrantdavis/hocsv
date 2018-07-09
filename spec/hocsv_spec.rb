@@ -12,7 +12,7 @@ RSpec.describe Hocsv, type: Class do
     end
   end
 
-  describe "#initialize" do 
+  describe "#initialize" do
     before(:each) do
       @hocsv = Hocsv.new([{one:1}], 'fakefile')
     end
@@ -29,7 +29,7 @@ RSpec.describe Hocsv, type: Class do
     end
 
 # :data
-    context "validate _data" do
+    context "validate :data" do
       it "is not nil?" do
         expect(@hocsv.data.nil?).to be(FALSE)
       end
