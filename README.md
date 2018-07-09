@@ -19,8 +19,21 @@ Or install it yourself as:
     $ gem install hocsv
 
 ## Usage
+### Create an instance on Hocsv passing in your data and a filename(optional - will default to hocsv.csv) and save it to a local variable :
 
-TODO: Write usage instructions here
+```
+	example_ary = [{one:1}, {two:2}]
+```
+```
+	hocsv = Hocsv.new(example_ary, ‘example_file)
+```
+
+### To create a file and covert your data call `#to_hocsv` on your hocsv instance
+```
+	hocsv.to_csv
+```
+
+Note: Your file will be saved in the current directory with the provided or default filename ending in  **.csv**
 
 ## Development
 ####Ruby Version: 2.3.3
