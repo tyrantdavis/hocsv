@@ -74,11 +74,11 @@ RSpec.describe Hocsv, type: Class do
       it "raises" do
         begin
           aggregate_failures "testing error responses" do
-            expect{noary.data}.to raise_error(TypeError, "ERROR: Invalid data type. Expected an Array. Got a(n) #{noary.data.class} #{noary.data.inspect}")
-            expect{emptyary.data}.to raise_error(ArgumentError "Error: Empty array. Expected at least one array item. Got #{emptyary.data.inspect}")
-            expect{nohash.data}.to raise_error(KeyError, "Error: No hash present in your Array. Expected at least one hash. Got #{nohash.data.inspect}")
-            expect {emptyfile.filename}.to raise_error(ArgumentError, "ERROR: Filename cannot be empty. Got #{emptyfile.filename.inspect} ")
-            expect {notastring.filename}.to raise_error(TypeError, "ERROR: Invalid filename. Expected a String. Got a(n) #{notastring.filename.class}")
+            expect{noary.data}.to raise_error(InvalidDataError, "Invalid data or file name. Please try again.")
+            expect{emptyary.data.fetch(0)}.to raise_error(InvalidDataError, "Invalid data or file name. Please try again.")
+            expect{nohash.data}.to raise_error(InvalidDataError, "Invalid data or file name. Please try again.")
+            expect {emptyfile.filename}.to raise_error(InvalidDataError, "Invalid data or file name. Please try again.")
+            expect {notastring.filename}.to raise_error(InvalidDataError, "Invalid data or file name. Please try again.")
           end
         end
       end

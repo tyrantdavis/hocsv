@@ -10,7 +10,7 @@ class Hocsv
   def initialize(data, filename="hocsv.csv")
     self.data = data
     self.filename = filename
-    raise InvalidDataError.new if (!data.is_a?(ARRAY)) || (data.empty?.eql(True)) || (!data.any? {|obj| obj.respond_to?(:keys)}) || (!filename.class.eql?(String)) || (filename.empty?.eql(True))
+    raise InvalidDataError.new if (!data.is_a?(Array)) || (data.empty?.eql?(TRUE)) || (!data.any? {|obj| obj.respond_to?(:keys)}) || (!filename.is_a?(String)) || (filename.empty?.eql?(TRUE))
   end
 
 # Creates .csv file and converts data to csv
