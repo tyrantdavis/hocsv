@@ -11,11 +11,11 @@ class Hocsv
     self.data = data
     self.filename = filename
     raise InvalidDataError.new if (!data.is_a?(Array)) || (data.empty?.eql?(TRUE)) || (!data.any? {|obj| obj.respond_to?(:keys)}) || (!filename.is_a?(String)) || (filename.empty?.eql?(TRUE))
+    to_hocsv
   end
 
 # Creates .csv file and converts data to csv
   def to_hocsv
-    return puts "A file with that name already exists." if File.file?(filename)
 
     filename.concat('.csv') if !filename.include?(".csv")
 
@@ -28,8 +28,5 @@ class Hocsv
         csv << hash.values_at(*headers)
       end
     end
-
-    filename.close
   end
-
 end
