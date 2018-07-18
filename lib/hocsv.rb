@@ -16,10 +16,10 @@ class Hocsv
   # Invokes to_hocsv
 
   def initialize(data, filename="hocsv.csv")
-    # 'data=' Returns the value of the data sent to the 'data' parameter
+    # 'data=' returns the value of the data sent to the 'data' parameter
     self.data = data
 
-    # Returns the value of the 'filename' parameter
+    # 'filename=' returns the value of the 'filename' parameter
     self.filename = filename
     raise InvalidDataError.new if (!data.is_a?(Array)) || (data.empty?.eql?(TRUE)) || (!data.any? {|obj| obj.respond_to?(:keys)}) || (!filename.is_a?(String)) || (filename.empty?.eql?(TRUE))
     to_hocsv
