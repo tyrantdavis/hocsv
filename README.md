@@ -1,4 +1,11 @@
 # Hocsv
+***
+[![Build Status](https://travis-ci.org/tyrantdavis/hocsv.svg?branch=master)](https://travis-ci.org/tyrantdavis/hocsv)
+
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
+
+
 
 HOCSV is a Ruby gem that converts an array of hashes to a CSV file.
 
@@ -52,3 +59,5 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the Hocsv project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[tyrantdavis]/hocsv/blob/master/CODE_OF_CONDUCT.md).
+
+A grand thank you to the people on Stack Overflow.
