@@ -4,7 +4,7 @@
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-
+[![Inline docs](http://inch-ci.org/github/tyrantdavis/hocsv.svg?branch=master)](http://inch-ci.org/github/tyrantdavis/hocsv)
 
 
 HOCSV is a Ruby gem that converts an array of hashes to a CSV file.
