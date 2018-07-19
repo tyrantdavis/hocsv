@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Hashes to CSV}
   spec.description       = %q{HOCSV is a Ruby gem that converts an array of hashes to a CSV file.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/tyrantdavis/hocsv"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
