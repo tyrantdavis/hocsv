@@ -26,7 +26,7 @@ Or install it yourself as:
     $ gem install hocsv
 
 ## Usage
-### Create an instance on Hocsv passing in your data and a filename(optional - will default to hocsv.csv) and save it to a local variable :
+Create an instance on Hocsv passing in your data and a filename(optional - will default to hocsv.csv) and save it to a local variable :
 
 ```
 	example_ary = [{one:1}, {two:2}]
