@@ -35,10 +35,9 @@ Or install it yourself as:
 	hocsv = Hocsv.new(example_ary, ‘example_file)
 ```
 
-### To create a file and covert your data call `#to_hocsv` on your hocsv instance
-```
-	hocsv.to_csv
-```
+
+When you create an instance a call to #to_hocsv is automatically made consequently creating a file and converting your data;
+
 
 Note: Your file will be saved in the current directory with the provided or default filename ending in  **.csv**
 
@@ -50,7 +49,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hocsv. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tyrantdavis/hocsv. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
